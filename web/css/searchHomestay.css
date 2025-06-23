@@ -1,0 +1,186 @@
+/* ===== Umum ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* ===== Navigasi ===== */
+.topnav {
+  background-color: #ffffff;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topnav .logo {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #5347ff;
+}
+
+.topnav .center-links,
+.topnav .right-links {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.topnav nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1vw;
+}
+
+.topnav nav a:hover,
+.topnav nav a.active {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+.username {
+  cursor: pointer;
+  color: #5347ff;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background-color: white;
+  border: 0.1vw solid #eee;
+  box-shadow: 0 0.3vw 0.6vw rgba(0,0,0,0.1);
+  border-radius: 0.5vw;
+  overflow: hidden;
+  z-index: 1000;
+  min-width: 10vw;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 1vw 1.5vw;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+  font-size: 0.9vw;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+/* ===== Carian & Penapis ===== */
+.search-section {
+  background: #ffffff;
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1vw;
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-bar input[type="text"] {
+  flex: 1 1 50%;
+  padding: 0.8vw 1vw;
+  font-size: 1vw;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 0.8vw 2vw;
+  background-color: #5347ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  justify-content: center;
+  margin-top: 0.5vw;
+}
+
+.filters label {
+  font-size: 0.9vw;
+}
+
+.filters button {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 0.7vw 1.5vw;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9vw;
+}
+
+/* ===== Senarai Homestay ===== */
+.homestay-container {
+  padding: 3% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5vw;
+  justify-content: center;
+}
+
+.homestay-card {
+  background: #fff;
+  width: 22%;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0.3vw 0.6vw rgba(0,0,0,0.05);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.homestay-card:hover {
+  transform: translateY(-3%);
+}
+
+.homestay-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.homestay-card h3 {
+  margin: 4% 5% 2%;
+  font-size: 1.1vw;
+}
+
+.homestay-card p {
+  margin: 1% 5%;
+  font-size: 0.95vw;
+  color: #555;
+}

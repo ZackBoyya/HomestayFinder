@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background: #ffffff;
+  padding: 4%;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+
+.logo {
+  color: #5347ff;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.logo a {
+  color: #5347ff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 8%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 90%;
+}
+
+.nav a.active, .nav a:hover {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 20%;       /* beri ruang untuk sidebar */
+  width: 80%;             /* guna baki 80% ruang */
+  padding: 3% 5%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.topbar {
+  margin-bottom: 4%;
+}
+
+.topbar h1 {
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.form-container {
+  background: #fff;
+  padding: 3%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #5347ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #3f38cc;
+}

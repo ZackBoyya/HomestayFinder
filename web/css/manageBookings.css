@@ -1,0 +1,150 @@
+/* ===== Rangka umum ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background: #ffffff;
+  padding: 4%;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.logo {
+  color: #5347ff;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.logo a {
+  color: #5347ff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 8%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 90%;
+}
+
+.nav a.active, .nav a:hover {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 20%; /* ruang untuk sidebar */
+  width: 100%;         /* lebar fleksibel */
+  padding: 3% 5%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  margin-bottom: 2%;
+  font-size: 150%;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.booking-item {
+  display: flex;
+  background: #ffffff;
+  padding: 2%;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.booking-details {
+  display: flex;
+  align-items: center;
+  gap: 4%;
+}
+
+.booking-details img {
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.booking-info p {
+  margin: 4px 0;
+  font-size: 90%;
+  color: #444;
+}
+
+.booking-info strong {
+  display: block;
+  font-size: 105%;
+  margin-bottom: 2%;
+}
+
+.booking-actions button {
+  padding: 8px 14px;
+  margin-left: 6px;
+  border: none;
+  border-radius: 6px;
+  font-size: 90%;
+  cursor: pointer;
+}
+
+.booking-actions span {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #ddd;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+
+button.approve {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.reject {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

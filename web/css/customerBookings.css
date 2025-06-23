@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 4%;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.logo {
+  color: #5347ff;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.logo a {
+  color: #5347ff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 10%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 90%;
+}
+
+.nav a.active, .nav a:hover {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 20%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.popup-success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeInOut 5s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: translateY(-10px); }
+  10%  { opacity: 1; transform: translateY(0); }
+  90%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.tabs {
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background: #e0e0e0;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.tab.active {
+  background: #5347ff;
+  color: white;
+}
+
+.booking-item {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.booking-item img {
+  width: 150px;
+  height: auto;
+  max-height: 120px;
+  margin-right: 20px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.booking-info {
+  flex: 1;
+}
+
+.status.approved {
+  background: #d4edda;
+  color: #155724;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+}
+.status.rejected {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+}
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+}
+
