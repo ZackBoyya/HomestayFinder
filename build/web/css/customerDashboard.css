@@ -1,0 +1,182 @@
+/* ===== Rangka umum ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background: #ffffff;
+  padding: 4%;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+
+.logo {
+  color: #5347ff;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.logo a {
+  color: #5347ff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 8%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 90%;
+}
+
+.nav a.active, .nav a:hover {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 20%; /* ruang untuk sidebar */
+  padding: 3%;
+  width: 80%;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.welcome{
+  font-size:150%;
+  margin-bottom:3%;
+}
+
+/* ===== Kad Ringkasan ===== */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2%;
+  margin-bottom:4%;
+}
+.card{
+  background:#fff;
+  padding:6%;
+  border-radius:8px;
+  box-shadow:0 0 6px rgba(0,0,0,.05);
+  text-align:center;
+}
+.card h3{
+  margin:0 0 8%;
+  font-size:90%;
+  color:#666;
+}
+.card p{
+  font-size:150%;
+  font-weight:bold;
+  margin:0;
+}
+
+/* ===== Bahagian bawah ===== */
+.bottom{
+  display:flex;
+  gap:3%;
+}
+
+/* Tempahan terkini */
+.recent{
+  flex:1;
+  background:#fff;
+  padding:4%;
+  border-radius:8px;
+  box-shadow:0 0 6px rgba(0,0,0,.05);
+}
+.booking-item{
+  display:flex;
+  gap:4%;
+  border-bottom:1px solid #eee;
+  padding:3% 0;
+}
+.booking-item img{
+  width:22%;
+  height:auto;
+  object-fit:cover;
+  border-radius:6px;
+}
+.info .name{
+  font-weight:600;
+}
+.status{
+  display:inline-block;
+  padding:2% 4%;
+  font-size:75%;
+  border-radius:4px;
+  text-transform:capitalize;
+}
+.status.pending{background:#fff7d6;color:#c78a00;}
+.status.approved{background:#d4f8d4;color:#2f9e44;}
+.status.rejected{background:#ffe2e2;color:#d63333;}
+
+/* Kalendar */
+.calendar-box{
+  flex:0 0 35%;
+  background:#fff;
+  padding:4%;
+  border-radius:8px;
+  box-shadow:0 0 6px rgba(0,0,0,.05);
+  display:flex;
+  flex-direction:column;
+}
+.calendar-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:4%;
+}
+.calendar-nav button{
+  padding:2% 4%;
+  background:#e2e6ff;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:80%;
+}
+.calendar-widget{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:2%;
+  text-align:center;
+  font-size:85%;
+}
+.calendar-widget .day-header{
+  font-weight:600;
+  background:#f0f0f0;
+  padding:5% 0;
+}
+.calendar-widget .day{
+  padding:12% 0;
+  border-radius:6px;
+  background:#fff;
+  box-shadow:0 0 4px rgba(0,0,0,.05);
+}
+

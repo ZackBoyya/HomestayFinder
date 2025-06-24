@@ -1,0 +1,116 @@
+/* ===== Rangka umum ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background: #ffffff;
+  padding: 4%;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+
+.logo {
+  color: #5347ff;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.logo a {
+  color: #5347ff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 8%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 90%;
+}
+
+.nav a.active, .nav a:hover {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 20%; /* ruang untuk sidebar */
+  width: 100%;         /* lebar fleksibel */
+  padding: 3% 5%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #5347ff;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #5347ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success {
+  background: #d4f8d4;
+  color: #2f9e44;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.error {
+  background: #ffe0e0;
+  color: #d60000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

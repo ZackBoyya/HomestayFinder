@@ -1,0 +1,189 @@
+/* ===== Rangka umum ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background: #ffffff;
+  padding: 4%;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+
+.logo {
+  color: #5347ff;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.logo a {
+  color: #5347ff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 8%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 90%;
+}
+
+.nav a.active, .nav a:hover {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 20%; /* ruang untuk sidebar */
+  width: 100%;         /* lebar fleksibel */
+  padding: 3% 5%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.topbar h1 {
+  font-size: 150%;
+  font-weight: 600;
+  margin-bottom: 4%;
+}
+
+.btn-add {
+  display: inline-block;
+  background-color: #5347ff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #372fcf;
+}
+
+
+.homestay-card {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  align-items: center;
+}
+
+.homestay-card img {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.homestay-card .details {
+  flex: 1;
+}
+
+.homestay-card .details h2 {
+  margin-top: 0;
+  font-size: 120%;
+  color: #333;
+}
+
+.homestay-card .details p {
+  margin: 1% 0;
+  font-size: 90%;
+  color: #555;
+}
+
+.amenities {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 6px;
+  font-size: 90%;
+}
+
+.amenities img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+
+.actions {
+  margin-top: 10px;
+}
+
+.btn-edit, .btn-delete {
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 8px;
+  font-size: 90%;
+}
+
+.btn-edit {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions a,
+.actions button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #4CAF50;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+

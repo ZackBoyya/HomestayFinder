@@ -1,0 +1,282 @@
+/* ===== Umum ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* ===== Navigasi ===== */
+.topnav {
+  background-color: #ffffff;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topnav .logo {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #5347ff;
+}
+
+.topnav .center-links,
+.topnav .right-links {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.topnav nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1vw;
+}
+
+.topnav nav a:hover,
+.topnav nav a.active {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+.username {
+  cursor: pointer;
+  color: #5347ff;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background-color: white;
+  border: 0.1vw solid #eee;
+  box-shadow: 0 0.3vw 0.6vw rgba(0,0,0,0.1);
+  border-radius: 0.5vw;
+  overflow: hidden;
+  z-index: 1000;
+  min-width: 10vw;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 1vw 1.5vw;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+  font-size: 0.9vw;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+/* ===== Hero Banner ===== */
+.hero {
+  background: linear-gradient(to right, #5347ff, #756bff);
+  color: white;
+  text-align: center;
+  padding: 8vh 5%;
+}
+
+.hero h1 {
+  font-size: 2.5vw;
+  margin-bottom: 1vh;
+}
+
+.hero p {
+  font-size: 1.2vw;
+  margin-bottom: 3vh;
+}
+
+.cta-button {
+  background: #fff;
+  color: #5347ff;
+  padding: 1.2vw 2vw;
+  border-radius: 0.6vw;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 1vw;
+}
+
+.cta-button:hover {
+  background: #eaeaea;
+}
+
+/* ===== Ciri-ciri Utama ===== */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 6vh 5%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.feature-box {
+  max-width: 20vw;
+}
+
+.feature-box img {
+  width: 4vw;
+  margin-bottom: 2vh;
+}
+
+.feature-box h3 {
+  font-size: 1.3vw;
+  margin-bottom: 1vh;
+}
+
+.feature-box p {
+  font-size: 1vw;
+  color: #666;
+}
+
+/* ===== Homestay Pilihan ===== */
+.featured {
+  padding: 6vh 5%;
+  background: #f1f3f5;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 2vw;
+  margin-bottom: 4vh;
+}
+
+.homestay-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+.homestay-card {
+  background: #ffffff;
+  border-radius: 0.6vw;
+  box-shadow: 0 0.2vw 0.6vw rgba(0,0,0,0.05);
+  width: 22vw;
+  overflow: hidden;
+  text-align: left;
+}
+
+.homestay-card img {
+  width: 100%;
+  height: 11vw;
+  object-fit: cover;
+}
+
+.homestay-card h4 {
+  margin: 1vw;
+  font-size: 1.3vw;
+}
+
+.homestay-card p {
+  margin: 0 1vw 1vw;
+  font-size: 1vw;
+  color: #555;
+}
+
+/* ================== TESTIMONI =================== */
+.testimonials {
+  background: #ffffff;
+  padding: 5% 8%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2vw;
+  margin-bottom: 3%;
+}
+
+.testi-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.testi-card {
+  background: #f9f9ff;
+  border: 1px solid #e0e0f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+  width: 28%;
+  padding: 3%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.testi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
+
+.testi-text {
+  font-style: italic;
+  color: #555;
+  font-size: 1vw;
+  margin-bottom: 8%;
+}
+
+.testi-user {
+  font-weight: bold;
+  color: #333;
+  font-size: 0.9vw;
+  text-align: right;
+}
+
+/* ================== FAQ =================== */
+.faq {
+  background-color: #f1f3f5;
+  padding: 5% 8%;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 3%;
+}
+
+.faq-item {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 2%;
+  margin-bottom: 2%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #f9f9f9;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 1vw;
+  color: #5347ff;
+}
+
+.faq-answer {
+  font-size: 0.95vw;
+  color: #555;
+  margin-top: 1%;
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+

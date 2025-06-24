@@ -1,0 +1,326 @@
+/* Umum */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Navigasi (reused) */
+.topnav {
+  background-color: #ffffff;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topnav .logo {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #5347ff;
+}
+
+.topnav .center-links,
+.topnav .right-links {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.topnav nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1vw;
+}
+
+.topnav nav a:hover,
+.topnav nav a.active {
+  color: #5347ff;
+  font-weight: bold;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+.username {
+  cursor: pointer;
+  color: #5347ff;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background-color: white;
+  border: 0.1vw solid #eee;
+  box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.1);
+  border-radius: 0.5vw;
+  overflow: hidden;
+  z-index: 1000;
+  min-width: 10vw;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 1vw 1.5vw;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+  font-size: 0.9vw;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Paparan Homestay */
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4% 5%;
+  gap: 4%;
+  background: #fff;
+}
+
+.image-box {
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0.3vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+  flex: 1 1 50%;
+  background: #fdfdfd;
+  padding: 3%;
+  border-radius: 8px;
+  box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.05);
+}
+
+.info-box h2 {
+  font-size: 1.6vw;
+  margin-bottom: 2%;
+  color: #5347ff;
+}
+
+.info-box p {
+  font-size: 1vw;
+  margin-bottom: 1%;
+  line-height: 1.6;
+}
+
+.kemudahan {
+  margin-top: 3%;
+}
+
+.kemudahan h3 {
+  font-size: 1.2vw;
+  margin-bottom: 1%;
+  color: #222;
+}
+
+.kemudahan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.kemudahan li {
+  font-size: 0.95vw;
+  margin: 0.5vw 0;
+  padding-left: 1.5vw;
+  position: relative;
+}
+
+.kemudahan li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #5347ff;
+  font-weight: bold;
+}
+
+/* Kalendar + Tempahan Sebelah Menyebelah */
+.booking-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4%;
+  padding: 4% 5%;
+  background: #fff;
+}
+
+.availability-section,
+.booking-form-section {
+  flex: 1 1 45%;
+  min-width: 300px;
+  background: #ffffff;
+  padding: 3%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.availability-section h3,
+.booking-form-section h3 {
+  color: #5347ff;
+  margin-bottom: 1.5vw;
+}
+
+/* Kalendar */
+#calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+#calendar-nav button {
+  padding: 0.5% 2%;
+  background: #5347ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1%;
+  text-align: center;
+}
+
+.calendar-grid .day {
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  font-size: 90%;
+}
+
+.calendar-grid .booked {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.calendar-grid .available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Borang Tempahan */
+.booking-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #5347ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #372fcf;
+}
+
+.alert-box {
+  background-color: #fff3f3;
+  border-left: 6px solid #ff4d4d;
+  color: #b30000;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  font-size: 0.95vw;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* === Popup Pengesahan === */
+#overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.popup-box {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 1001;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.popup-box h3 {
+  margin-top: 0;
+  color: #5347ff;
+}
+
+.popup-box p {
+  margin: 10px 0;
+}
+
+.popup-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.popup-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#cancelBooking {
+  background-color: #ccc;
+}
+
+#confirmBooking {
+  background-color: #5347ff;
+  color: white;
+}
+
+
+
